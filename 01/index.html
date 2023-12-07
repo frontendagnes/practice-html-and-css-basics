@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./Goofy.webp" alt="Logo" title="Logo" />
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="menu__item--click"><a href="#">Book &rarr;</a>
+                    <ul class="menu__second">
+                        <li><a href="#">Book 1</a></li>
+                        <li><a href="#">Book 2</a></li>
+                        <li><a href="#">Book 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h3>Title Title Title</h3>
+                <div class="wrapper">
+                    <div class="author">Jan Nowak</div>
+                    <div class="date">06-12-2023</div>
+                </div>
+            </header>
+
+            <div class="article__content">
+                <img src="./Goofy.webp" alt="Goofy" title="Goofy" />
+                <div class="content__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda ex dolore ab odit sunt harum
+                    porro nemo cumque architecto, magnam aspernatur fugit obcaecati consectetur recusandae, praesentium
+                    repellat? Nam, explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim
+                    repellat
+                    error necessitatibus eum iure illum doloremque qui aut, expedita nemo id delectus iste distinctio!
+                    Fugiat quae ullam earum laborum?
+                </div>
+            </div>
+            <table>
+                <caption>The Table</caption>
+                <thead>
+                    <tr>
+                        <td>Frist Name</td>
+                        <td>Last Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jan</td>
+                        <td>Nowak</td>
+                    </tr>
+                    <tr>
+                        <td>Stefan</td>
+                        <td>Kowalski</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article class="form__section">
+            <fieldset>
+                <Legend>Wprowadź Komentarz</Legend>
+                <form>
+                    <div class="form__item">
+                        <label for="name">Podaj nick lub imię:</label>
+                        <input name="name" placeholder="Podaj nick lub imię" required />
+                    </div>
+                    <div class="form__item">
+                        <label for="comment">Wpisz treść komentarza:</label>
+                        <textarea name="comment" id="comment" placeholder="Wpisz treść komentarza" required>alala</textarea>
+                    </div>
+                    <input type="submit" value="Wyślij komentarz" />
+                </form>
+            </fieldset>
+        </article>
+        <article class="comments">
+            <h2>Komentarze</h2>
+        <div class="comments__wrapper">
+            <div class="comment">
+                <div class="comment__author">Jan Nowak</div>
+                <div class="comment__date">6 czerwiec 2023</div>
+                <div class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus architecto est officia modi repellat, magni nulla quia veniam impedit dolore odit eligendi perferendis maxime veritatis neque, corporis corrupti voluptates recusandae!</div>
+            </div>
+            <div class="comment">
+                <div class="comment__author">Zbigniew Zabka</div>
+                <div class="comment__date">8 Lipiec 2023</div>
+                <div class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                    architecto est officia modi repellat, magni nulla quia veniam impedit dolore odit eligendi
+                    perferendis maxime veritatis neque, corporis corrupti voluptates recusandae!</div>
+            </div>
+            <div class="comment">
+                <div class="comment__author">Stanisław Kowalski</div>
+                <div class="comment__date">6 grudzień 2023</div>
+                <div class="comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                    architecto est officia modi repellat, magni nulla quia veniam impedit dolore odit eligendi
+                    perferendis maxime veritatis neque, corporis corrupti voluptates recusandae!</div>
+            </div>
+        </div>
+        </article>
+    </main>
+    <footer>
+        Prawa autorskie &copy; zastrzeżone
+    </footer>
 </body>
+
 </html>
